@@ -3,8 +3,10 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
@@ -16,50 +18,57 @@
       method="POST"
       onsubmit="onSubmit()"
     >
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
         <div class="input-block">
-          <label for="usersurname" required>Surname:</label>
+          <label for="surname" required>Surname:</label>
           <input
             type="text"
-            id="usersurname"
+            id="surname"
             autocomplete="off"
-            name="surname">
+            name="surname"
+          >
         </div>
         <div class="input-block">
-          <label for="username">Name:</label>
+          <label for="name">Name:</label>
           <input
             type="text"
             name="name"
-            id="username"
-            autocomplete="off">
+            id="name"
+            autocomplete="off"
+          >
         </div>
         <div class="input-block">
-          <label for="userage">How old are You?</label>
+          <label for="age">How old are You?</label>
           <input
             type="number"
             name="age"
-            id="userage"
+            id="age"
             value="12"
-            max="100" min="9">
+            max="100"
+            min="9"
+          >
         </div>
         <div class="input-block">
-          <label for="userbd">Full date of birth:</label>
+          <label for="birthday">Full date of birth:</label>
           <input
             type="date"
-            id="userbd"
+            id="birthday"
             name="birthday"
-            value="" required>
+            value=""
+            required
+          >
         </div>
         <div class="input-block">
           <label for="agreement">I accept the term of the agreement</label>
           <input
             type="checkbox"
             id="agreement"
-            name="agree">
+            name="agree"
+          >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
         <div class="input-block">
           <label for="useremail">E-mail:</label>
@@ -68,7 +77,8 @@
             name="email"
             id="useremail"
             placeholder="email@example.com"
-            autocomplete="off">
+            autocomplete="off"
+          >
         </div>
         <div class="input-block">
           <label for="userpassword">Password:</label>
@@ -76,10 +86,12 @@
             type="password"
             id="userpassword"
             name="password"
-            minlength="8" maxlength="30">
+            minlength="8"
+            maxlength="30"
+          >
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <div class="input-block">
           Do you love cats?
@@ -87,14 +99,16 @@
             type="radio"
             id="contactChoice1"
             name="fact"
-            value="yes">
+            value="yes"
+          >
           <label for="contactChoice1">Yes</label>
 
           <input
             type="radio"
             id="contactChoice2"
             name="fact"
-            value="no">
+            value="no"
+          >
           <label for="contactChoice2">No</label>
         </div>
 
@@ -102,26 +116,26 @@
           <label for="color">What is your favorite color?</label>
           <input
             type="color"
-            id="color">
+            id="color"
+          >
         </div>
 
         <div class="input-block">
-          <label for="sleepingtime">What time do you go to bed?</label>
+          <label for="sleepingTime">What time do you go to bed?</label>
           <input
             type="time"
             step="1"
-            id="sleepingtime">
+            id="sleepingTime"
+          >
         </div>
 
         <div class="input-block">
-          <label for="carbrand">What are your favorite brand of cars?
+          <label for="carBrand">What are your favorite brand of cars?
             <select
               name="cars"
-              id="carbrand" multiple>
-              <option
-                value=""
-                disabled selected>
-              </option>
+              id="carBrand"
+              multiple
+            >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
@@ -135,24 +149,30 @@
             type="range"
             id="rate"
             value="0"
-            name="workrate">
+            name="workrate"
+          >
         </div>
 
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <div class="input-block">
           <label for="comment">Comments:</label>
           <textarea
             id="comment"
             name="comments"
-            cols="20" rows="2">
+            cols="20"
+            rows="2"
+          >
           </textarea>
         </div>
 
         <div class="input-block">
           <label for="recommend">Would you recommend us?</label>
-          <select id="recommend" name="recommendation">
+          <select
+            id="recommend"
+            name="recommendation"
+          >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
